@@ -1,0 +1,17 @@
+.container{
+    height: 25px;
+    width: 100vw;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    .list{
+        span{
+            color: grey;
+            a{
+                text-decoration: none;
+                color: rgb(61, 121, 212);
+            }
+        }
+    }
+}

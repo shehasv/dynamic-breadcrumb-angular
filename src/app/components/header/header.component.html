@@ -1,0 +1,14 @@
+<div class="container">
+    <div class="app-name">
+        <h1 routerLink="/">Breadcrumb</h1>
+    </div>
+    <div class="nav-items">
+        <button routerLink="/sec-a" routerLinkActive="is-active" ><h4>Section A</h4></button>
+        <button routerLink="/sec-b" routerLinkActive="is-active"><h4>Section B</h4></button>
+        <button routerLink="/sec-c" routerLinkActive="is-active" [matMenuTriggerFor]="menu"><h4>Section C</h4></button>
+        <mat-menu class="myMenu" #menu="matMenu">
+            <button routerLink="sec-c/c1" mat-menu-item>C-1</button>
+            <button routerLink="sec-c/c2" mat-menu-item>C-2</button>
+        </mat-menu>
+    </div>
+</div>

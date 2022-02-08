@@ -1,0 +1,50 @@
+.container{
+    background-color: rgb(201, 231, 231);
+    height: 50px;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .nav-items{
+        button{
+            all: unset;
+            color: grey;
+            margin-right: 10px;
+            cursor: pointer;
+            height: 50px;
+            padding: 0 5px;
+        }
+        button:hover{
+            background-color: grey;
+            color: white;
+        }
+        .is-active{
+            background-color: grey;
+            color: white;
+        }
+    }
+}
+
+@media only screen and (max-width: 750px){
+    .container{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+}
+
+@media only screen and (max-width: 450px){
+    .container{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        .nav-items{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            button{
+                margin-right: 0;
+            }
+        }
+    }
+}

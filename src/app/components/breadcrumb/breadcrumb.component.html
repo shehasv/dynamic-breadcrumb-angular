@@ -1,0 +1,9 @@
+<div class="container">
+    <div class="list">
+        <span *ngFor="let bcElement of bcLoadedData; let last = last">
+            <span *ngIf="last">{{bcElement.breadcrumb}}</span> <span *ngIf="!last"><a [routerLink]="bcElement.url">{{bcElement.breadcrumb}}</a></span> 
+            <span class="breadcrumb-separator"
+                  *ngIf="!last"> / </span>
+        </span>
+    </div>
+</div>
